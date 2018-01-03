@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .1s ease-in;
+}
+
+body {
+	text-align: center;
+	font-size: 16px;
+	font-family: "Tebuchet MC", Tebuchet, Arial, sans-serif;
+	background-color: #3B3F45;
+	border: 20px solid #fff;
+	}
+
+header {
+	background-color: #4A4F56;
+	color: #EB7E7F;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+footer {
+	background-color: #4A4F56;
+	color: #EB7E7F;
+	padding: 20px;
+	margin-bottom: 400px;
+}
+
+header + ul {
+	margin-bottom: 40px;
+}
+
+li, footer {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+li {
+	list-style-type: none;
+	background-color: #88839E;
+	border-top: 2px solid #88839E;
+	border-bottom: 2px solid #88839E;
+	text-align: left;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+	padding: 15px;
+}
+
+span {
+	color: white;
+}
+
+small {
+	color: #C5B5B2;
+	}
+
+li:nth-of-type(2n+1) {
+	background-color: #77768D;
+	border-top: 2px solid #77768D;
+	border-bottom: 2px solid #77768D;
+}
+
+small:before {
+	content: '('
+
+}
+
+small::after {
+	content: ')'
+}
+
+li:hover {
+	background-color: #5B5C6D;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+li:active {
+	background-color: #E57F7B;
+}
+
+input[type="checkbox"]:checked ~ span{
+	color: #A3A0B5;
+	text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ span small{
+	color: #A3A0B5;
+	}
