@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('./../fonts/ProximaNova-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura PT';
+	src: url('./../fonts/FuturaPT-Heavy.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+html, body {
+	min-height: 100%;
+    background-color: #464f54;
+}
+
+main {
+	max-width: 1064px;
+	max-height: 752px;
+    margin: 150px auto;
+    background-color: #ffffff;
+}
+
+.header-input {
+	width: 876px;
+	height: 263px;
+	position: absolute;
+	top: -100px;
+	left:200px;
+}
+
+.form-text {
+	width: 876px;
+	height: 187px;
+	background-color: #181818;
+	padding-left: 60px;
+	padding-top: 50px;
+	box-sizing: border-box;
+
+}
+
+.input-title {
+	font: 400 normal 15px 'Proxima Nova';
+	color: #767676;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+input {
+	display: inline-block;
+	border: none;
+	outline: none;
+	background-color: #181818;
+	font: 400 normal 48px/1.2 'Playfair Display', serif;
+	color: #fefefe;
+	vertical-align: middle;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #303030;
+}
+
+::-webkit-input-placeholder {color:#fefefe;}
+::-moz-placeholder          {color:#fefefe;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fefefe;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fefefe;}
+
+#input-width {
+	width: 100%;
+}
+
+.control-bar {
+	width: 812px;
+	height: 76px;
+	background-color: #f0b72b;
+	padding-left: 40px;
+	padding-top: 15px;
+	box-sizing: border-box;
+	float: right;
+}
+
+.control-bar li {
+	display: inline-block;
+	margin-left: 5px;
+	opacity: 1;
+}
+
+img {
+	width: 80%;
+	height: 80%;
+}
+
+.control-bar > li:hover {
+	opacity: 0.6;
+}
+
+.main-article {
+	max-height: 750px;
+	margin: 0 132px 0 70px;
+	padding: 200px 0 0 54px;
+	border-left: 2px solid #e8eced;
+	position: relative;
+}
+
+.text-author {
+	font: 400 normal 20px 'Proxima Nova';
+	text-transform: uppercase;
+	color: #b4b4b4;
+	letter-spacing: 4px;
+	padding-bottom: 30px;
+}
+
+.text-title {
+	font: 800 normal 78px/1.1 'Futura PT';
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.text-questions {
+	font: 400 italic 30px Georgia, serif;
+	color: #8f8f8f;
+	padding-bottom: 40px;
+}
+
+.text-1, .text-2 {
+	font: 400 normal 27px/1.6 Georgia, serif;
+	text-align: justify;
+	padding-bottom: 20px;
+}
+
+
