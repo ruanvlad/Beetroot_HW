@@ -4,7 +4,12 @@
 	transition: all .1s ease-in;
 }
 
+html {
+	height: 100%;
+}
+
 body {
+	min-height: 100%;
 	text-align: center;
 	font-size: 16px;
 	font-family: "Tebuchet MC", Tebuchet, Arial, sans-serif;
@@ -23,7 +28,6 @@ footer {
 	background-color: #4A4F56;
 	color: #EB7E7F;
 	padding: 20px;
-	margin-bottom: 10px;
 }
 
 header + ul {
@@ -34,6 +38,10 @@ li, footer {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: 900px;
+}
+
+footer {
+	padding: 20px 15px;
 }
 
 li {
@@ -66,7 +74,6 @@ li:nth-of-type(2n+1) {
 
 small:before {
 	content: '('
-
 }
 
 small::after {

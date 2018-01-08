@@ -9,6 +9,7 @@ html {
 }
 
 main {
+	// @TODO: в обертках не использовать жестко заданных в пикселях высоту и ширину, надо ширину задвать как max-width: 1400px; min-height: 940px; это делается для того, чтобы наша страница была респонсив
 	height: 940px;
 	width: 1400px;
 	margin: 150px auto;
@@ -16,6 +17,7 @@ main {
 	box-shadow: 0 0 50px 30px rgba(245,245,245,1);
 }
 
+// @TODO: заканчивай стилить по тегам - стилить только по классам
 article {
 	font: 100 normal 20px/1.7 'Lato', sans-serif;
 	padding: 100px 132px;

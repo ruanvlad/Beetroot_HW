@@ -77,6 +77,7 @@ input {
 }
 
 .control-bar {
+	// @TODO: max-width
 	width: 812px;
 	height: 76px;
 	background-color: #f0b72b;
@@ -92,6 +93,7 @@ input {
 	opacity: 1;
 }
 
+// @TODO: изображения лучше стилить max-width: 100%; height: auto;
 img {
 	width: 80%;
 	height: 80%;
@@ -129,6 +131,7 @@ img {
 	padding-bottom: 40px;
 }
 
+// @TODO: названия классов - более человекопонятные
 .text-1, .text-2 {
 	font: 400 normal 27px/1.6 Georgia, serif;
 	text-align: justify;

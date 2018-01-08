@@ -8,6 +8,7 @@
    
 }
 
+// @TODO: отступы, пустые строки, зачем задавать высоту боди и html ??
 html, body {
     min-height: 100%;
 }
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+    // @TODO: min-width: 320px; font-size: 14px;
     min-width: 1000px;
  	font-size: 150%;
 	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
@@ -60,6 +62,7 @@ p i {
     vertical-align: middle;
 }
 
+// @TODO: цвета выноси в классы, стилить по тегу - очень и очень плохо, можно лишь дефолтные какие-то стили абсолютно для всех одинаковых тегов
 li:first-of-type {
     background-color: #3399cc;
     width: 50%;
