@@ -15,19 +15,19 @@
 }
 
 html {
-    height: 100%;
+	height: 100%;
 }
 
 html, body {
 	min-height: 100%;
-    background-color: #464f54;
+	background-color: #464f54;
 }
 
 main {
 	max-width: 1064px;
 	max-height: 752px;
-    margin: 150px auto;
-    background-color: #ffffff;
+	margin: 150px auto;
+	background-color: #ffffff;
 }
 
 .header-input {
@@ -45,7 +45,6 @@ main {
 	padding-left: 60px;
 	padding-top: 50px;
 	box-sizing: border-box;
-
 }
 
 .input-title {
@@ -73,16 +72,14 @@ input {
 :-ms-input-placeholder      {color:#fefefe;}
 
 #input-width {
-	width: 100%;
+	max-width: 100%;
 }
 
 .control-bar {
-	// @TODO: max-width
-	width: 812px;
+	max-width: 812px;
 	height: 76px;
 	background-color: #f0b72b;
-	padding-left: 40px;
-	padding-top: 15px;
+	padding: 15px 200px 0 40px;
 	box-sizing: border-box;
 	float: right;
 }
@@ -93,10 +90,8 @@ input {
 	opacity: 1;
 }
 
-// @TODO: изображения лучше стилить max-width: 100%; height: auto;
 img {
-	width: 80%;
-	height: 80%;
+	max-width: 80%; height: auto;s
 }
 
 .control-bar > li:hover {
@@ -131,11 +126,8 @@ img {
 	padding-bottom: 40px;
 }
 
-// @TODO: названия классов - более человекопонятные
 .text-1, .text-2 {
 	font: 400 normal 27px/1.6 Georgia, serif;
 	text-align: justify;
 	padding-bottom: 20px;
 }
-
-

@@ -1,59 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,400,700|Playfair+Display');
 
-html, body {
-    min-height: 100%;
-}
-
 html {
-    height: 100%;
+	height: 100%;
 }
 
-main {
-	// @TODO: в обертках не использовать жестко заданных в пикселях высоту и ширину, надо ширину задвать как max-width: 1400px; min-height: 940px; это делается для того, чтобы наша страница была респонсив
-	height: 940px;
-	width: 1400px;
+body {
+	min-height: 100%;
+}
+
+.ar-wrap {
+	min-height: 940px;
+	max-width: 1400px;
 	margin: 150px auto;
 	background-color: white;
 	box-shadow: 0 0 50px 30px rgba(245,245,245,1);
 }
 
-// @TODO: заканчивай стилить по тегам - стилить только по классам
-article {
+.ar-article {
 	font: 100 normal 20px/1.7 'Lato', sans-serif;
 	padding: 100px 132px;
 }
 
-h1 {
+.ar-header {
 	font: 400 normal 42px/2.5 'Playfair Display', serif;
-
 } 
 
-p {
+.ar-paragraph {
 	white-space: pre-line;
 }
 
-p:first-of-type::first-letter {
+.ar-paragraph:first-of-type::first-letter {
 	font-family: 'Playfair Display', serif;
 	font-size: 6em;
-    margin-right: 35px;
-    margin-bottom: 10px;
-    float: left;
-    line-height: 0.67em;
+	margin-right: 35px;
+	margin-bottom: 10px;
+	float: left;
+	line-height: 0.67em;
 }
 
-
-blockquote {
+.ar-quote {
 	font: 100 italic 24px 'Lato', sans-serif;
 	margin-bottom: 30px;
 	}
 
-#quote {
+#ar-quote {
 	font-size: 2.5em;
 	font-weight: 700;
 	white-space: pre-wrap;
 }
 
-button {
+.ar-link {
 	display: inline-block;
 	border: 1px solid #EAA258;
 	background: none;

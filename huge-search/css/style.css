@@ -1,28 +1,27 @@
-html, body {
-    min-height: 100%;
-}
-
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
+	min-height: 100%;
 	font-family: Arial, sans-sefif;
 	color: #c2c2c2;
 	font-weight: bold;
 	background-color: rgb(241,241,241);
-	// @TODO:  у боди никаких маржинов и паддингов, все задается дочерним элементам
-	margin-top: 60px;
 }
 
-// @TODO: так нельзя делать, стилить только по классам
-div {
+.search {
+	padding-top: 60px;
 	width: 80%;
 	margin: 0 auto 50px;
 }
 
-input {
-	display: inline-block;
+.wrap {
+	width: 80%;
+	margin: 0 auto 50px;
+}
+
+.search-form [type="text"] {
 	border: none;
 	outline: none;
 	background-color: rgb(241,241,241);
@@ -37,8 +36,7 @@ input {
 :-moz-placeholder           {color:#c2c2c2;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#c2c2c2;}
 
-button {
-	display: inline-block;
+.search-form [type="submit"] {
 	border: none;
 	background: none;
 	vertical-align: middle;
@@ -49,11 +47,11 @@ button {
 	height: 80%;
 }
 
-
 [class*="column"] {
 	display: inline-block;
-	// @TODO: width: calc((100% - 100px) / 2); у тебя средней колонки маржин справо и слево по 50 пиксеелй, соответственно тебе надо эти маржтины вычитать из общей ширины контейнера
-	width: 30%;
+/*	// @TODO: width: calc((100% - 100px) / 2); у тебя средней колонки маржин справо и слево по 50 пиксеелй, соответственно тебе надо эти маржтины вычитать из общей ширины контейнера
+	// @A: У меня тогда все ломается*/	
+width: 30%; 
 }
 
 span {
@@ -71,7 +69,7 @@ li {
 	padding: 2px 0px;
 }
 
-a  {
+a {
 	display: block;
 	background: rgba(118,117,128,0.05);
 	border-radius: 10px;
