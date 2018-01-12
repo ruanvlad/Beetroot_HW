@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900|Roboto:300,400,900');
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #6c6c6c;
+  color:  #303030;
+}
+
+.pm-wrap {
+  max-width: 1500px;
+  min-height: 2664px;
+  background-color: #eee;
+  margin: 40px auto;
+  padding: 50px 152px 30px;
+  box-sizing: border-box;
+  background: radial-gradient(circle closest-side at 970px 420px, #fff 30%, #eee);
+}
+
+.pm-logo-and-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  max-height: 34px;
+}
+
+.pm-logo {
+  font: 900 normal 48px 'Roboto', sans-serif;
+}
+
+.pm-nav {
+  font: 400 normal 18px 'Roboto', sans-serif;
+}
+
+.pm-nav-item {
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.pm-nav-button {
+  border: transparent;
+  background-color: inherit;
+  opacity: .5;
+  font-size: 18px;
+}
+
+.pm-slider {
+  display: flex;
+  padding-top: 106px;
+  padding-bottom: 70px;
+}
+
+.pm-slider-description {
+  flex-basis: 50%;
+  text-align: right; 
+}
+
+.pm-slider-title {
+  font: 900 normal 150px/1 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.pm-slider-paragraph {
+  font: 300 normal 24px/1.5 'Roboto', sans-serif;
+  max-height: 4.5em;
+  overflow: hidden;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.pm-red-link {
+  font: 700 normal 24px 'Roboto', sans-serif;
+  color: #e10011;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+.pm-slider-image {
+  margin: auto;
+}
+
+.pm-dots {
+  width: 100px;
+  margin: 0 auto 103px;
+  text-align: center;
+}
+
+.pm-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0 5px;
+  background-color: #303030;
+  border-radius: 50%;
+}
+
+.pm-dot:first-of-type {
+  background-color: #e10011;
+}
+
+.pm-main {
+  min-height: 1193px;
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 37px 0 38px;
+  box-sizing: border-box;
+  margin-bottom: 74px;
+}
+
+.pm-main-title {
+  font: 900 normal 48px/1.4 'Raleway', sans-serif;
+}
+
+.pm-main-paragraph {
+  font: 400 normal 18px/1.6 'Raleway', sans-serif;
+  max-width: 570px;
+  margin: 6px auto 41px;
+}
+
+.pm-photos > ul {
+  border: 16px solid #fff;
+}
+
+.pm-photos > ul > li {
+  display: inline-block;
+  border: 16px solid #fff;
+}
+
+.layer-red {
+  width: 328px;
+  height: 387px;
+  margin-bottom: -16px;
+  background-image: url(../images/layer-red.jpg);
+  position: relative;
+}
+
+.pm-layer-text {
+  font: 900 normal 30px 'Roboto', sans-serif;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 255px;
+  left: 36px;
+}
+
+.pm-layer-text p:last-of-type {
+  border-bottom: 5px solid #fff;
+  padding-bottom: 10px;
+  max-width: 95px;
+}
+
+.pm-news-title {
+  font: 900 normal 48px/1.4 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.pm-news-paragraph {
+  font: 400 normal 18px/1.6 'Raleway', sans-serif;
+  max-width: 570px;
+  margin: 5px auto 40px;
+}
+
+.pm-news {
+  text-align: center;
+}
+
+.pm-form {
+  position: relative;
+  font-size: 0;
+}
+
+input[type="text"] {
+  min-width: 496px;
+  min-height: 68px;
+  box-sizing: border-box;
+  font: 600 italic 18px 'Raleway', sans-serif;
+  color: #979797;
+  background-color: #fff;
+  border: none;
+  border-radius: 60px 0 0 60px;
+  outline: none;
+  padding-left: 70px;
+}
+
+.pm-form .pm-icon-envelope {
+  position: absolute;
+  font-size: 18px;
+  color: #979797;
+  top: 26px;
+  margin-left: 37px;
+}
+
+input[type="submit"] {
+  width: 210px;
+  height: 70px;
+  font: 900 normal 18px 'Roboto', sans-serif;
+  color: #fff;
+  background-color: #e10011;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0 60px 60px 0;
+  outline: none;
+}
+
+.pm-form .pm-icon-caret {
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+  top: 26px;
+  margin-left: 159px;
+  z-index: 1;
+}
+
+.pm-media {
+  width: 1000px;
+  margin: 0 auto 65px;
+  text-align: center;
+  padding-top: 112px;
+}
+
+.pm-media-icons {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 34px;
+  line-height: 2.2;
+  color: #979797;
+}
+
+.copyright {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font: 400 normal 18px 'Raleway', sans-serif;
+  color: #979797;
+}
+
+.copyright span {
+  font: 400 normal 18px 'Raleway', sans-serif;
+  color: #303030;
+}
+
+.pm-nav-item:hover {
+  opacity: .6;
+  color: #e10011;
+}
+
+.pm-nav-button:hover {
+  opacity: .6;
+  cursor: pointer;
+  color: #e10011;
+}
+
+.pm-red-link:hover {
+  opacity: .6;
+}
+
+.pm-photos > ul > li:nth-of-type(1):hover {
+  opacity: .6;
+}
+
+.pm-photos > ul > li:nth-of-type(2):hover {
+  opacity: .6;
+}
+
+.pm-photos > ul > li:nth-of-type(4):hover {
+  opacity: .6;
+}
+
+.pm-photos > ul > li:nth-of-type(5):hover {
+  opacity: .6;
+}
+
+.layer-red:hover  {
+  background-image: url(../images/fitness-tracker.jpg);
+  opacity: none;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {color: transparent}
+input[type="text"]:focus::-moz-placeholder          {color: transparent}
+input[type="text"]:focus:-moz-placeholder           {color: transparent}
+input[type="text"]:focus:-ms-input-placeholder      {color: transparent}
+
+input[type="submit"]:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.pm-media-icons:hover {
+  opacity: .6;
+  color: #e10011;
+  cursor: pointer;
+}
