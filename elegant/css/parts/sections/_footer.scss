@@ -1,0 +1,88 @@
+.footer {
+  min-height: 800px;
+  background: url("./../images/bg-footer.png") no-repeat center;
+  background-size: cover;
+  color: $white;
+  &__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font: 700 normal 35px "Raleway", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    padding: 110px 0 60px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 86px;
+      height: 2px;
+      background-color: $white;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__socials {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 60px;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    i {
+      color: $white;
+      font-size: 30px;
+      margin-right: 30px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__btn {
+    font: 400 normal 24px "Lato", sans-serif;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 50px;
+    width: 185px;
+    height: 60px;
+    border: 3px solid $white;
+    background: transparent;
+    padding: 10px 0 10px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.input {
+  max-width: 670px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: transparent;
+  &__field {
+    @include placeholder($grey1, 1, 18px, italic);
+    color: $white;
+    width: calc((100% - 60px) / 2);
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 10px 20px;
+    &--message {
+      margin-top: 100px;
+      width: 100%;
+    }
+  }
+}

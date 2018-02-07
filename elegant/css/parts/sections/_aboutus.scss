@@ -1,0 +1,43 @@
+.aboutus {
+  min-height: 500px;
+  background-color: $lightBlue;
+  background: url("./../images/bg-main.png") no-repeat center;
+  background-size: cover;
+  color: $white;
+  font-size: 16px;
+  &__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    //justify-content: space-between;
+  }
+  &__text {
+    padding-right: 256px;
+  }
+
+  img {
+    padding-top: 75px;
+  }
+}
+
+.text__title {
+  font: 400 normal 45px "Lato", sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 170px 0 20px;
+}
+.text__description {
+  max-width: 530px;
+  font: 100 normal 22px "Lato", sans-serif;
+  color: $white;
+  padding: 0 0 70px;
+}
+.text__link {
+  font: 400 normal 18px "Lato", sans-serif;
+  color: $white;
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.5;
+  }
+}
