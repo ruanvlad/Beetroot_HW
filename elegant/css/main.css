@@ -1,454 +1,84 @@
-@import url(./font-awesome.css);
-@import url(./ionicons.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:100,400,400i,500|Raleway:400,700");
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+/*
+Error: Invalid CSS after "      width: 100%": expected "{", was ";"
+        on line 74 of D:/Beetroot/Beetroot_HW/elegant/css/parts/sections/_works.scss
+        from line 19 of D:\Beetroot\Beetroot_HW\elegant\css\main.scss
 
-li {
-  list-style: none; }
+69: <<<<<<< HEAD
+70:     .item__img {
+71: =======
+72:     .w-item__img {
+73: >>>>>>> master
+74:       width: 100%;
+75:       height: 100%;
+76:       object-fit: cover;
+77:     }
+78:   }
+79: }
 
-a,
-button,
-img {
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none; }
-
-body {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #6c6c6c;
-  font-family: "Lato", sans-serif;
-  font-family: "Raleway", sans-serif; }
-  @media (max-width: 1024px) {
-    body {
-      padding-top: 283px; } }
-
-.container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #fff; }
-
-.header {
-  background-color: #a8cedf;
-  background: url("./../images/bg-header.png") no-repeat center;
-  background-size: cover; }
-  .header__wrap {
-    max-width: 1200px;
-    margin: 0 auto; }
-  .header__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 50px 0 225px; }
-  .header__description {
-    max-width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 45px; }
-  .header__title {
-    font: 700 normal 48px "Raleway", sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    padding-bottom: 40px; }
-    .header__title::before {
-      position: absolute;
-      content: "";
-      width: 86px;
-      height: 2px;
-      background-color: #fff;
-      bottom: 0px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-  .header__text {
-    max-width: 600px;
-    font: 400 normal 22px "Lato", sans-serif;
-    color: #fff;
-    text-align: center;
-    padding: 45px 0 245px; }
-  .header__btn {
-    color: #8097a2;
-    font-size: 60px;
-    width: 92px;
-    height: 92px;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 50%;
-    border: 2px solid #8097a2; }
-    .header__btn:hover {
-      color: #fff;
-      border: 2px solid #fff; }
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 70px; }
-  .nav__item {
-    font: 500 normal 14px "Lato", sans-serif;
-    color: #fffefe;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    margin-left: 52px;
-    padding: 10px 0; }
-    .nav__item:hover {
-      opacity: 0.5; }
-
-.logo__wrap {
-  width: 110px;
-  height: 20px; }
-
-.services {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center; }
-  .services__title {
-    font: 700 normal 35px "Raleway", sans-serif;
-    color: #222;
-    text-transform: uppercase;
-    position: relative;
-    padding: 112px 0 72px; }
-    .services__title::before {
-      position: absolute;
-      content: "";
-      width: 86px;
-      height: 2px;
-      background-color: #000;
-      bottom: 0px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-
-.items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 78px 0 120px; }
-  .items__item {
-    width: calc((100% - 120px) / 3);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .items .img {
-    height: 180px; }
-  .items .items-title {
-    font: 400 normal 24px "Lato", sans-serif;
-    color: #222;
-    padding-bottom: 40px; }
-  .items .items-text {
-    font: 400 normal 16px/1.5 "Lato", sans-serif;
-    color: #222; }
-
-.aboutus {
-  min-height: 500px;
-  background-color: #a8cedf;
-  background: url("./../images/bg-main.png") no-repeat center;
-  background-size: cover;
-  color: #fff;
-  font-size: 16px; }
-  .aboutus__wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .aboutus__text {
-    padding-right: 256px; }
-  .aboutus img {
-    padding-top: 75px; }
-
-.text__title {
-  font: 400 normal 45px "Lato", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  padding: 170px 0 20px; }
-
-.text__description {
-  max-width: 530px;
-  font: 100 normal 22px "Lato", sans-serif;
-  color: #fff;
-  padding: 0 0 70px; }
-
-.text__link {
-  font: 400 normal 18px "Lato", sans-serif;
-  color: #fff;
-  text-decoration: underline; }
-  .text__link:hover {
-    opacity: 0.5; }
-
-.work {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center; }
-  .work__title {
-    font: 700 normal 35px "Raleway", sans-serif;
-    color: #222;
-    text-transform: uppercase;
-    position: relative;
-    padding: 118px 0 72px; }
-    .work__title::before {
-      position: absolute;
-      content: "";
-      width: 86px;
-      height: 2px;
-      background-color: #000;
-      bottom: 0px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-  .work__btn {
-    margin: 0 auto;
-    padding-bottom: 80px; }
-    .work__btn:hover {
-      opacity: 0.5; }
-    .work__btn button {
-      width: 370px;
-      height: 60px;
-      font: 400 normal 24px "Lato", sans-serif;
-      color: #222;
-      text-transform: uppercase;
-      border: 3px solid #222; }
-      @media (max-width: 1024px) {
-        .work__btn button {
-          margin-left: 10%;
-          width: 50%; } }
-
-.items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 100%;
-  padding: 94px 0 80px; }
-  @media (max-width: 1024px) {
-    .items {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      top: 0;
-      left: 0;
-      width: 100%; } }
-  .items__w-item {
-    width: calc((100% - 60px) / 3);
-    position: relative; }
-    @media (max-width: 1024px) {
-      .items__w-item {
-        margin-top: 20px;
-        width: 100%;
-        cursor: pointer; } }
-    .items__w-item:hover .item__overlay {
-      z-index: -1; }
-    .items__w-item .item__img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
-
-.overlay {
-  font: 400 normal 22px "Lato", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .overlay i {
-    font-size: 30px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-transform-origin: center;
-            transform-origin: center; }
-
-.footer {
-  min-height: 800px;
-  background: url("./../images/bg-footer.png") no-repeat center;
-  background-size: cover;
-  color: #fff; }
-  .footer__wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .footer__title {
-    font: 700 normal 35px "Raleway", sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    padding: 110px 0 60px; }
-    .footer__title:before {
-      position: absolute;
-      content: "";
-      width: 86px;
-      height: 2px;
-      background-color: #fff;
-      bottom: 0px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-  .footer__socials {
-    margin: 0 auto;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 70px 0 60px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .footer__socials:last-child {
-      margin-right: 0; }
-    .footer__socials i {
-      color: #fff;
-      font-size: 30px;
-      margin-right: 30px; }
-      .footer__socials i:hover {
-        opacity: 0.5; }
-  .footer__btn {
-    font: 400 normal 24px "Lato", sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 50px;
-    width: 185px;
-    height: 60px;
-    border: 3px solid #fff;
-    background: transparent;
-    padding: 10px 0 10px; }
-    .footer__btn:hover {
-      opacity: 0.5; }
-
-.input {
-  max-width: 670px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: transparent; }
-  .input__field {
-    color: #fff;
-    width: calc((100% - 60px) / 2);
-    height: 50px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    padding: 10px 0 10px 20px; }
-    .input__field::-webkit-input-placeholder {
-      color: #676767;
-      opacity: 1;
-      font-size: 18px;
-      font-family: italic;
-      text-transform: none; }
-    .input__field:-moz-placeholder {
-      color: #676767;
-      opacity: 1;
-      font-size: 18px;
-      font-family: italic;
-      text-transform: none; }
-    .input__field::-moz-placeholder {
-      color: #676767;
-      opacity: 1;
-      font-size: 18px;
-      font-family: italic;
-      text-transform: none; }
-    .input__field:-ms-input-placeholder {
-      color: #676767;
-      opacity: 1;
-      font-size: 18px;
-      font-family: italic;
-      text-transform: none; }
-    .input__field:hover {
-      border: 1px solid #fff; }
-    .input__field--message {
-      margin-top: 100px;
-      width: 100%; }
+Backtrace:
+D:/Beetroot/Beetroot_HW/elegant/css/parts/sections/_works.scss:74
+D:\Beetroot\Beetroot_HW\elegant\css\main.scss:19
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      width: 100%\": expected \"{\", was \";\"\A         on line 74 of D:/Beetroot/Beetroot_HW/elegant/css/parts/sections/_works.scss\A         from line 19 of D:\Beetroot\Beetroot_HW\elegant\css\main.scss\A \A 69: <<<<<<< HEAD\A 70:     .item__img {\A 71: =======\A 72:     .w-item__img {\A 73: >>>>>>> master\A 74:       width: 100%;\A 75:       height: 100%;\A 76:       object-fit: cover;\A 77:     }\A 78:   }\A 79: }"; }

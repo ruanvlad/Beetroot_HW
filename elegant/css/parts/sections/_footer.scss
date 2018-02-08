@@ -81,7 +81,11 @@
     border-bottom: 1px solid $white;
     padding: 10px 0 10px 20px;
     &:hover {
+<<<<<<< HEAD
       border: 1px solid $white;
+=======
+      outline: 1px solid $white;
+>>>>>>> master
     }
     &--message {
       margin-top: 100px;
