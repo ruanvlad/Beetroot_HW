@@ -453,7 +453,7 @@ body {
       font-family: italic;
       text-transform: none; }
     .input__field:hover {
-      border: 1px solid #fff; }
+      outline: 1px solid #fff; }
     .input__field--message {
       margin-top: 100px;
       width: 100%; }
