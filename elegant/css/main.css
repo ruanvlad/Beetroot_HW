@@ -12,8 +12,12 @@
 li {
   list-style: none; }
 
+div,
 a,
 button,
+i,
+input,
+form,
 img {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -170,7 +174,8 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .items .img {
-    height: 180px; }
+    height: 180px;
+    width: 100%; }
   .items .items-title {
     font: 400 normal 24px "Lato", sans-serif;
     color: #222;
@@ -254,7 +259,7 @@ body {
           margin-left: 10%;
           width: 50%; } }
 
-.items {
+.w-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +269,7 @@ body {
   max-width: 100%;
   padding: 94px 0 80px; }
   @media (max-width: 1024px) {
-    .items {
+    .w-items {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -277,19 +282,19 @@ body {
       top: 0;
       left: 0;
       width: 100%; } }
-  .items__item {
-    width: calc((100% - 90px) / 3);
+  .w-items__item {
+    width: calc((100% - 60px) / 3);
     position: relative; }
     @media (max-width: 1024px) {
-      .items__item {
+      .w-items__item {
         margin-top: 20px;
         width: 100%;
         cursor: pointer; } }
-    .items__item:hover .item__overlay {
+    .w-items__item:hover .w-item__overlay {
       z-index: -1; }
-    .items__item img .item__img {
+    .w-items__item .w-item__img {
       width: 100%;
-      height: auto;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
 
@@ -447,6 +452,8 @@ body {
       font-size: 18px;
       font-family: italic;
       text-transform: none; }
+    .input__field:hover {
+      border: 1px solid #fff; }
     .input__field--message {
       margin-top: 100px;
       width: 100%; }
