@@ -1,0 +1,38 @@
+.wrap {
+  max-width: 1024px;
+  width: 100%;
+  height: 1024px;
+  border: 30px solid grey;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.black {
+  width: 12.5%;
+  height: 12.5%;
+  background-color: black;
+  float: left;
+}
+
+.white {
+
+  width: 12.5%;
+  height: 12.5%;
+  float: left;
+}
+
+.black--checkergrey {
+  width: 12.5%;
+  height: 12.5%;
+  background-color: black;
+  background: radial-gradient(circle closest-side, grey 90%, black 10%);
+  float: left;
+}
+
+.black--checker {
+  width: 12.5%;
+  height: 12.5%;
+  background-color: black;
+  background: radial-gradient(circle closest-side, white 90%, black 10%);
+  float: left;
+}
